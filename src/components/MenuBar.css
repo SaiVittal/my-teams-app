@@ -1,0 +1,26 @@
+/* YourMainComponent.css */
+.red-background {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px; /* Set the height as needed */
+    background-color: transparent;
+    z-index: 1000; /* Ensure it's above other elements */
+    /* Add other styling properties as needed */
+  }
+
+
+
+  .visible {
+    display: flex;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  .task2 a:hover
+  {
+    text-decoration: 'under-line';  
+    color:red;
+  }
