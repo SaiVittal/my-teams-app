@@ -9,6 +9,10 @@
     /* Add other styling properties as needed */
   }
 
+.static buttons{
+  position: fixed;
+}
+
 
 
   .visible {
