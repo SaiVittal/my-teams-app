@@ -101,7 +101,7 @@ const initialFormData = {
 };
 
 const accessToken =
-	'eyJ0eXAiOiJKV1QiLCJub25jZSI6IjhrVHhHTC1VTEZjS1AwOXE5cm85V011RkllY1BQamZDNTladnJnWGZyb3MiLCJhbGciOiJSUzI1NiIsIng1dCI6IlQxU3QtZExUdnlXUmd4Ql82NzZ1OGtyWFMtSSIsImtpZCI6IlQxU3QtZExUdnlXUmd4Ql82NzZ1OGtyWFMtSSJ9.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTAwMDAtYzAwMC0wMDAwMDAwMDAwMDAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9jODVlOTY4Zi03MjlhLTRiNjUtYWIzOS04NTRjYWFiMzhlNTUvIiwiaWF0IjoxNzAxNjY3NTc5LCJuYmYiOjE3MDE2Njc1NzksImV4cCI6MTcwMTc1NDI3OSwiYWNjdCI6MCwiYWNyIjoiMSIsImFpbyI6IkFWUUFxLzhWQUFBQUhjVWFGWWVaZXQ0aWFOQnovNUU4RTFlc3pMTWY4dUdBbndYOVZ4VFVwVDd0REJ0N0hSMnoySGg2dkgwQ0xjNFI5MlB3NU9lZXhDblBBK0Y2NmFHKzFPSm95Ukx5KzBhdHc4MFhldUtzRVJVPSIsImFtciI6WyJwd2QiLCJtZmEiXSwiYXBwX2Rpc3BsYXluYW1lIjoiR3JhcGggRXhwbG9yZXIiLCJhcHBpZCI6ImRlOGJjOGI1LWQ5ZjktNDhiMS1hOGFkLWI3NDhkYTcyNTA2NCIsImFwcGlkYWNyIjoiMCIsImZhbWlseV9uYW1lIjoidml0dGFsIiwiZ2l2ZW5fbmFtZSI6IlNhaSIsImlkdHlwIjoidXNlciIsImlwYWRkciI6IjE4My44Mi4xMTUuMTk5IiwibmFtZSI6IlNhaSB2aXR0YWwiLCJvaWQiOiI3YmE5YTg0Yy0yOGU4LTQ4YWEtYjJmZi03Njc0MDhhMWQxOTUiLCJwbGF0ZiI6IjMiLCJwdWlkIjoiMTAwMzIwMDJCQUUzNjZGRSIsInJoIjoiMC5BYmNBajVaZXlKcHlaVXVyT1lWTXFyT09WUU1BQUFBQUFBQUF3QUFBQUFBQUFBQzNBS00uIiwic2NwIjoiQVBJQ29ubmVjdG9ycy5SZWFkLkFsbCBBUElDb25uZWN0b3JzLlJlYWRXcml0ZS5BbGwgRGV2aWNlTWFuYWdlbWVudEFwcHMuUmVhZC5BbGwgRGV2aWNlTWFuYWdlbWVudEFwcHMuUmVhZFdyaXRlLkFsbCBEZXZpY2VNYW5hZ2VtZW50Q29uZmlndXJhdGlvbi5SZWFkLkFsbCBEZXZpY2VNYW5hZ2VtZW50Q29uZmlndXJhdGlvbi5SZWFkV3JpdGUuQWxsIERldmljZU1hbmFnZW1lbnRNYW5hZ2VkRGV2aWNlcy5SZWFkLkFsbCBEZXZpY2VNYW5hZ2VtZW50U2VydmljZUNvbmZpZy5SZWFkV3JpdGUuQWxsIERpcmVjdG9yeS5SZWFkLkFsbCBEaXJlY3RvcnkuUmVhZFdyaXRlLkFsbCBHcm91cC5SZWFkLkFsbCBHcm91cC5SZWFkV3JpdGUuQWxsIG9wZW5pZCBwcm9maWxlIFRhc2tzLlJlYWQgVGFza3MuUmVhZFdyaXRlIFVzZXIuUmVhZCBVc2VyLlJlYWQuQWxsIFVzZXIuUmVhZEJhc2ljLkFsbCBVc2VyLlJlYWRXcml0ZS5BbGwgZW1haWwiLCJzaWduaW5fc3RhdGUiOlsia21zaSJdLCJzdWIiOiJ3Qm5fLWEtaTBQbGZwS1VGU3lYNzRHZ0RrQnZKLWRvMVRNX19xbWdpSXBFIiwidGVuYW50X3JlZ2lvbl9zY29wZSI6Ik5BIiwidGlkIjoiYzg1ZTk2OGYtNzI5YS00YjY1LWFiMzktODU0Y2FhYjM4ZTU1IiwidW5pcXVlX25hbWUiOiJQcmVwYXJvckAyeDN0cGIub25taWNyb3NvZnQuY29tIiwidXBuIjoiUHJlcGFyb3JAMngzdHBiLm9ubWljcm9zb2Z0LmNvbSIsInV0aSI6IjZ4TERtTVdtcWtpenROVURZX2NIQUEiLCJ2ZXIiOiIxLjAiLCJ3aWRzIjpbIjYyZTkwMzk0LTY5ZjUtNDIzNy05MTkwLTAxMjE3NzE0NWUxMCIsImI3OWZiZjRkLTNlZjktNDY4OS04MTQzLTc2YjE5NGU4NTUwOSJdLCJ4bXNfY2MiOlsiQ1AxIl0sInhtc19zc20iOiIxIiwieG1zX3N0Ijp7InN1YiI6IjJ2TnpFZFV0M1NRa05tOFFXcGs2QmJlWXRKcXVrLUpJY05KbDNtQk5sbzQifSwieG1zX3RjZHQiOjE2ODgzNDg4MDN9.Ce-puzOqMEWKu8B85u0WICw0yh04AFKToD55PBo8b40JABkUuyEY9rrId-3GpCnK7NGFkKHfdAf68wuz5afh3CmL4ulSzVw31wEYmx7c-ROoh5kFs0FKaka1yg8yWSJhCtd1F64CGOgrIt7qbd0wEoQooqvrjeXfhYyGKorYBeTA26HGJy2TXZPB4VQJWTvOmsKZulPOqAcYYr2BfvdIOFf_xkdp3MY1QKvNlk9CsM6tKDkROhr4gt4dE30tsnIU3Fa6WDQY7Aa6n93qqPzf2f8hJvNeP_M-pxITM51KrsNfhMw6qVt0b6yQX-XMeoGzVE3_nd6fHsryAiIk5K9PBw';
+	'eyJ0eXAiOiJKV1QiLCJub25jZSI6IkNTc25INmVsUVJMX05EVFZDdV9MYVNKOVU3NmlLVUhWbkR2MnZBU18tVlUiLCJhbGciOiJSUzI1NiIsIng1dCI6IjVCM25SeHRRN2ppOGVORGMzRnkwNUtmOTdaRSIsImtpZCI6IjVCM25SeHRRN2ppOGVORGMzRnkwNUtmOTdaRSJ9.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTAwMDAtYzAwMC0wMDAwMDAwMDAwMDAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9jODVlOTY4Zi03MjlhLTRiNjUtYWIzOS04NTRjYWFiMzhlNTUvIiwiaWF0IjoxNzA1NDk2NDA1LCJuYmYiOjE3MDU0OTY0MDUsImV4cCI6MTcwNTU4MzEwNSwiYWNjdCI6MCwiYWNyIjoiMSIsImFpbyI6IkFWUUFxLzhWQUFBQWJvMkJvOVJ2bnRwTWlkbVlNOXVvYlpRWDRvamF5czFwTVRrQXZoVXJLVnJITEVFRlQ1VnYveVRSSFUxYktPMkQxQTlRdWJBNkZTWGhqZ3MyejFNYWFxMURjMjc1WHROY3V4QVlBcG9UOHJNPSIsImFtciI6WyJwd2QiLCJtZmEiXSwiYXBwX2Rpc3BsYXluYW1lIjoiR3JhcGggRXhwbG9yZXIiLCJhcHBpZCI6ImRlOGJjOGI1LWQ5ZjktNDhiMS1hOGFkLWI3NDhkYTcyNTA2NCIsImFwcGlkYWNyIjoiMCIsImZhbWlseV9uYW1lIjoidml0dGFsIiwiZ2l2ZW5fbmFtZSI6IlNhaSIsImlkdHlwIjoidXNlciIsImlwYWRkciI6IjE4My44Mi4xMTUuMTk5IiwibmFtZSI6IlNhaSB2aXR0YWwiLCJvaWQiOiI3YmE5YTg0Yy0yOGU4LTQ4YWEtYjJmZi03Njc0MDhhMWQxOTUiLCJwbGF0ZiI6IjMiLCJwdWlkIjoiMTAwMzIwMDJCQUUzNjZGRSIsInJoIjoiMC5BYmNBajVaZXlKcHlaVXVyT1lWTXFyT09WUU1BQUFBQUFBQUF3QUFBQUFBQUFBQzNBS00uIiwic2NwIjoiQVBJQ29ubmVjdG9ycy5SZWFkLkFsbCBBUElDb25uZWN0b3JzLlJlYWRXcml0ZS5BbGwgRGV2aWNlTWFuYWdlbWVudEFwcHMuUmVhZC5BbGwgRGV2aWNlTWFuYWdlbWVudEFwcHMuUmVhZFdyaXRlLkFsbCBEZXZpY2VNYW5hZ2VtZW50Q29uZmlndXJhdGlvbi5SZWFkLkFsbCBEZXZpY2VNYW5hZ2VtZW50Q29uZmlndXJhdGlvbi5SZWFkV3JpdGUuQWxsIERldmljZU1hbmFnZW1lbnRNYW5hZ2VkRGV2aWNlcy5SZWFkLkFsbCBEZXZpY2VNYW5hZ2VtZW50U2VydmljZUNvbmZpZy5SZWFkV3JpdGUuQWxsIERpcmVjdG9yeS5SZWFkLkFsbCBEaXJlY3RvcnkuUmVhZFdyaXRlLkFsbCBHcm91cC5SZWFkLkFsbCBHcm91cC5SZWFkV3JpdGUuQWxsIG9wZW5pZCBwcm9maWxlIFRhc2tzLlJlYWQgVGFza3MuUmVhZFdyaXRlIFVzZXIuUmVhZCBVc2VyLlJlYWQuQWxsIFVzZXIuUmVhZEJhc2ljLkFsbCBVc2VyLlJlYWRXcml0ZS5BbGwgZW1haWwiLCJzdWIiOiJ3Qm5fLWEtaTBQbGZwS1VGU3lYNzRHZ0RrQnZKLWRvMVRNX19xbWdpSXBFIiwidGVuYW50X3JlZ2lvbl9zY29wZSI6Ik5BIiwidGlkIjoiYzg1ZTk2OGYtNzI5YS00YjY1LWFiMzktODU0Y2FhYjM4ZTU1IiwidW5pcXVlX25hbWUiOiJQcmVwYXJvckAyeDN0cGIub25taWNyb3NvZnQuY29tIiwidXBuIjoiUHJlcGFyb3JAMngzdHBiLm9ubWljcm9zb2Z0LmNvbSIsInV0aSI6IlFBY1dyR01WblVDU2tDbEpkeDR0QUEiLCJ2ZXIiOiIxLjAiLCJ3aWRzIjpbIjYyZTkwMzk0LTY5ZjUtNDIzNy05MTkwLTAxMjE3NzE0NWUxMCIsImI3OWZiZjRkLTNlZjktNDY4OS04MTQzLTc2YjE5NGU4NTUwOSJdLCJ4bXNfY2MiOlsiQ1AxIl0sInhtc19zc20iOiIxIiwieG1zX3N0Ijp7InN1YiI6IjJ2TnpFZFV0M1NRa05tOFFXcGs2QmJlWXRKcXVrLUpJY05KbDNtQk5sbzQifSwieG1zX3RjZHQiOjE2ODgzNDg4MDN9.ZZHV3gDi1bhyozixivcb8nuwJv2LOQzQADOaDkefDBLYGmdT4_-XmWL2gOPIHWwwR1kBzg1_7CawpJIkDkjyE-G6n60_cdi1smDbj8kuU77PtAZxsqKPg09QnycM16FOS1jHCeujLtRLhQn7T6nvYbpD1Me92O5xOkZGaBvHPtMpujwQ2eXJtSx28yor1vVTOdrM66RQ4XYNr5Ih77K8YXxyp8r_bADG4qju_TH7NUw_uqJqSNcA_Cah28fuziHIDt9VJHvg_GrWSQ5-JZEPq16WDa6T6N1IbXF_anhV06wUVwPj2AMgB8V6Mjd_HC5qkqyZfWAOwvlXkf_4tVGvrA';
 const client = Client.init({
 	authProvider: (done) => {
 		done(null, accessToken);
@@ -771,6 +771,28 @@ const PlannerTasksTable = () => {
 			throw error;
 		}
 	};
+
+	
+	const [currentSelectedTask, setCurrentSelectedTask] = useState('');
+
+	useEffect(() => {
+	  const getTask = async () => {
+		try {
+		  const selectedTask = await client
+			.api(`/planner/tasks/${taskId}/`)
+			.version('v1.0')
+			.get();
+	
+		  setCurrentSelectedTask(selectedTask.data);
+		  console.log(selectedTask.data, "My Data1233");
+		} catch (error) {
+		  console.error('Error fetching task:', error);
+		}
+	  };
+	
+	  getTask();
+	}, [taskId]); // Add taskId as a dependency if it's from props or state
+	
 
 	const updateCheckListItems = async (taskId, checklistItems) => {
 		try {
@@ -1949,15 +1971,15 @@ const PlannerTasksTable = () => {
 
 	console.log(filteredData, 'myFilteredData');
 
-	const handleRowClick = (e, item) => {
+	const handleRowClick = async (e, item) => {
 		const checkboxClicked =
-			e.target.tagName === 'INPUT' && e.target.type === 'checkbox';
-
+		  e.target.tagName === 'INPUT' && e.target.type === 'checkbox';
+	  
 		console.log('data123', item);
 		console.log('myDate', item.textDueDate.label);
-
+	  
 		fetchPlannerLabels(item);
-
+	  
 		console.log('jhsd', selectedPriority);
 		setIsItemSelected(true);
 		console.log(isItemSelected);
@@ -1965,20 +1987,35 @@ const PlannerTasksTable = () => {
 		console.log(isRowSelection);
 		fetchChecklist(item);
 		fetchBucketDetails(item);
-
+	  
 		if (checkboxClicked) {
-			e.stopPropagation();
-			console.log('Checkbox Selected');
+		  e.stopPropagation();
+		  console.log('Checkbox Selected');
 		} else if (isRowSelection) {
-			console.log('Row Selected');
-			console.log(currentSelectedItem);
-			// Handle row selection logic here
-			// Update the selectedRows state or perform any other action
-			// without changing the checkbox state
+		  console.log('Row Selected');
+		  console.log(currentSelectedItem);
+		  // Handle row selection logic here
+		  // Update the selectedRows state or perform any other action
+		  // without changing the checkbox state
 		}
-
+	  
+		// try {
+		//   const selectedTask = await client
+		// 	.api(`/planner/tasks/${item.taskId}/details`)
+		// 	.version('v1.0')
+		// 	.get();
+	  
+		//   setCurrentSelectedTask(selectedTask.data);
+		//   console.log(selectedTask, "Selected Task Data");
+		// } catch (error) {
+		//   console.error('Error fetching task:12', error);
+		// }
+	  
 		setCurrentSelectedItem(item);
-	};
+	  };
+	  
+	  // Assuming the rest of your component structure remains the same
+	  
 
 	useEffect(() => {
 		const fetchData = async () => {
